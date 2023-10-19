@@ -29,5 +29,9 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
+### properties ###
+
+/src/main/resources/bot.properties
+
 ### VS Code ###
 .vscode/
