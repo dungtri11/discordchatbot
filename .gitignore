@@ -32,6 +32,6 @@ build/
 ### properties ###
 
 /src/main/resources/bot.properties
-
+/src/main/resources/chatgpt.properties
 ### VS Code ###
 .vscode/

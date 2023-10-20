@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.PropertySource;
 
 @SpringBootApplication
-@PropertySource("classpath:bot.properties")
+@PropertySource({"classpath:bot.properties", "classpath:chatgpt.properties"})
 public class MathewApplication {
 
 	public static void main(String[] args) {
