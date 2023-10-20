@@ -13,21 +13,21 @@ public abstract class MessageListener {
     private ChatGPT gpt;
 
     public Mono<Void> processMessage(final Message message) {
-
+        String content = message.getContent().toLowerCase();
         return Mono.just(message)
                 .filter(msg -> {
                     final Boolean notFromBot = msg.getAuthor()
                             .map(user -> !user.isBot())
                             .orElse(false);
-                    final Boolean isCallBot = msg.getContent().toLowerCase().startsWith("hey mathew,");
+                    final Boolean isCallBot = content.startsWith("hey mathew,");
                     if (notFromBot) {
                         msg.getAuthor().ifPresent(user -> author = user.getUsername());
                     }
                     return notFromBot && isCallBot;
                 })
                 .flatMap(Message::getChannel)
-                .flatMap(channel -> channel.createMessage(gpt.responseTo(message
-                        .getContent().replaceAll("hey mathew,","").trim())))
+                .flatMap(channel -> channel.createMessage(gpt.responseTo(content
+                        .replaceAll("hey mathew,","").trim())))
                 .then();
     }
 
