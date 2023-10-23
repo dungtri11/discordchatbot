@@ -1,11 +1,9 @@
 package com.discordbot.mathew.service;
 
 
-import com.discordbot.mathew.entity.ChatGPT;
 import com.discordbot.mathew.listener.EventListener;
 import com.discordbot.mathew.listener.MessageListener;
 import discord4j.core.event.domain.message.MessageUpdateEvent;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
 

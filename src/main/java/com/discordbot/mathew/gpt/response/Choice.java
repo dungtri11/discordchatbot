@@ -1,4 +1,4 @@
-package com.discordbot.mathew.gpt;
+package com.discordbot.mathew.gpt.response;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;

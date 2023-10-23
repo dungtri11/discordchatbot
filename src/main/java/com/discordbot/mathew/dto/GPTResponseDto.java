@@ -1,7 +1,7 @@
 package com.discordbot.mathew.dto;
 
-import com.discordbot.mathew.gpt.Choice;
-import com.discordbot.mathew.gpt.Usage;
+import com.discordbot.mathew.gpt.response.Choice;
+import com.discordbot.mathew.gpt.response.Usage;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

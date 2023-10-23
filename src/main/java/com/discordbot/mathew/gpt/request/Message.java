@@ -1,4 +1,4 @@
-package com.discordbot.mathew.gpt;
+package com.discordbot.mathew.gpt.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
